@@ -1,0 +1,56 @@
+body {
+  background-color: #FDFFFC;
+  margin: 0;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2EC4B6;
+  color: #272D2D;
+  padding: 20px 0 20px 0;
+}
+
+.header-wrapper .image-container {
+  margin: 0 0 0 15vw;
+}
+
+.header-wrapper .header-name {
+  padding: 0 0 0 60px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.header-wrapper .header-name h1 {
+  margin: 10% 8% 0 0;
+}
+
+.header-wrapper .header-name p {
+  margin: 10px 0 20px 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.header-wrapper .header-name .socials-container {
+  background: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.header-wrapper .header-name .socials-container ul {
+  margin: 0 17% 0 0;
+}
+
+.header-wrapper .header-name .socials-container ul img {
+  height: 40px;
+}
+
+.intro-break {
+  background: black;
+  border-style: dotted none none;
+  border-width: 6px;
+  width: 7%;
+  border-color: lightgray;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,94 @@
+// Variables
+
+// Font
+$header-font: "Courier New", Courier, monospace;
+$medium-font: 25px;
+$large-font: 35px;
+
+// Color Pallete
+$orange: #FF9F1C;
+$black: #272D2D;
+$cyan: #2EC4B6;
+$red: #E71D36;
+
+body{
+    background-color: #FDFFFC;
+    margin: 0;
+}
+
+.header-wrapper{
+    display: flex;
+    background-color: $cyan;
+    color: $black;
+    padding: 20px 0 20px 0;
+    .image-container{
+        margin: 0 0 0 15vw ;
+    }
+    .header-name{
+        padding: 0 0 0 60px;
+        font-size: $large-font;
+        text-align: center;
+
+        h1{
+            margin: 10% 8% 0 0;
+            
+        }
+
+        p{
+            margin: 10px 0 20px 0;
+            font-family: $header-font;
+            font-size: $medium-font;
+        }
+        .socials-container{
+            background: none;
+            font-family: $header-font;
+            font-size: $medium-font;
+            ul{
+                margin: 0 17% 0 0;
+                img{
+                    height: 40px;
+                }
+                
+            }
+        }
+    
+    }
+}
+
+.intro-container{
+    // background-color: red;
+}
+
+.socials-container{
+    // background-color: cyan;
+}
+.intro-break{
+    background: black;
+    border-style: dotted none none;
+    border-width: 6px;
+    width: 7%;
+    border-color: lightgray; 
+}
+
+.about-container{
+    // background: green;
+}
+
+.education-container{
+    // background: orange;
+}
+
+.skills-container{
+    // background: lime;
+}
+
+.projects-container{
+    // background: yellow;
+}
+
+.footer-container{
+    // background: grey;
+}
+
+
+

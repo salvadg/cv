@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&display=swap");
 body {
-  background-color: #FDFFFC;
+  background-color: yellow;
   margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .header-wrapper {
@@ -28,14 +31,12 @@ body {
 
 .header-wrapper .header-name p {
   margin: 10px 0 20px 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier Prime", monospace;
   font-size: 25px;
 }
 
 .header-wrapper .header-name .socials-container {
   background: none;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
 }
 
 .header-wrapper .header-name .socials-container ul {
@@ -46,11 +47,36 @@ body {
   height: 40px;
 }
 
-.intro-break {
-  background: black;
-  border-style: dotted none none;
-  border-width: 6px;
-  width: 7%;
-  border-color: lightgray;
+.about-wrapper {
+  background-color: #272D2D;
+  color: #FDFFFC;
+  height: 50vh;
+}
+
+.about-wrapper .about-container {
+  margin: 0 0 0 8%;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.about-wrapper .about-container h2 {
+  margin: 0;
+  padding: 20px 0 0 0;
+  color: #FF9F1C;
+  font-size: 35px;
+}
+
+.about-wrapper .about-container p {
+  margin: 10px 0 0 20%;
+  width: 60%;
+  font-size: 20px;
+}
+
+.education-container {
+  background: orange;
+}
+
+.education-container h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */

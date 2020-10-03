@@ -15,13 +15,19 @@ $cyan: #2EC4B6;
 $red: #E71D36;
 $white: #FDFFFC;
 
+
+/**********  Tag selectors  *********/
 body{
-    background-color: yellow;
+    // background-color: yellow;
     margin: 0;
     padding: 0;
     font-family: $Poppins;
 }
 
+/*******     End Tag selectors   *******/
+
+
+/********   Class Selctors     *****/
 .header-wrapper{
     display: flex;
     background-color: $cyan;
@@ -81,11 +87,17 @@ body{
     }
 }
 
+.construction-wrapper{
+    color: orange;
+    font-size: $large-font;
+    text-align: center;
+    padding: 50px;
+}
 .education-container{
-    h3{
-        margin: 0;
-    }
-    background: orange;
+    // h3{
+    //     margin: 0;
+    // }
+    // background: orange;
 }
 
 .socials-container{
@@ -107,5 +119,4 @@ body{
     // background: grey;
 }
 
-
-
+/*********   END Class Selctors     *****/

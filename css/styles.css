@@ -1,84 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
+/****   VARIABLES   ****/
+/****   Color Pallete   ****/
 /**********  Tag selectors  *********/
 body {
+  background-color: #989898;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  color: #252422;
 }
 
 /*******     End Tag selectors   *******/
 /********   Class Selctors     *****/
-.header-wrapper {
+.full-section-hero {
+  background: #3C91E6;
+  color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #2EC4B6;
-  color: #272D2D;
-  padding: 20px 0 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
-.header-wrapper .image-container {
-  margin: 0 0 0 15vw;
-}
-
-.header-wrapper .header-name {
-  padding: 0 0 0 60px;
-  font-size: 35px;
+.full-section-hero .header-wrapper .header-name {
   text-align: center;
-}
-
-.header-wrapper .header-name h1 {
-  margin: 10% 8% 0 0;
-}
-
-.header-wrapper .header-name p {
-  margin: 10px 0 20px 0;
-  font-family: "Courier Prime", monospace;
-  font-size: 25px;
-}
-
-.header-wrapper .header-name .socials-container {
-  background: none;
-}
-
-.header-wrapper .header-name .socials-container ul {
-  margin: 0 17% 0 0;
-}
-
-.header-wrapper .header-name .socials-container ul img {
-  height: 40px;
-}
-
-.about-wrapper {
-  background-color: #272D2D;
-  color: #FDFFFC;
-  height: 50vh;
-}
-
-.about-wrapper .about-container {
-  margin: 0 0 0 8%;
-  padding: 50px 0 0 0;
-  text-align: center;
-}
-
-.about-wrapper .about-container h2 {
   margin: 0;
-  padding: 20px 0 0 0;
-  color: #FF9F1C;
-  font-size: 35px;
+  font-size: 2.5rem;
 }
 
-.about-wrapper .about-container p {
-  margin: 10px 0 0 20%;
-  width: 60%;
-  font-size: 20px;
+.full-section-hero .header-wrapper .header-name .logo-container {
+  margin: 0;
 }
 
-.construction-wrapper {
-  color: orange;
-  font-size: 35px;
-  text-align: center;
-  padding: 50px;
+.full-section-hero .header-wrapper .header-name .name {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+  color: #FFC72C;
+}
+
+.full-section-hero .header-wrapper .header-name .occupation {
+  margin: 0;
+  font-weight: 200;
+  font-family: "Source Code Pro", monospace;
+}
+
+.full-section-hero .header-wrapper .header-name .major {
+  margin: 0;
+  font-weight: 200;
+  font-family: "Source Code Pro", monospace;
+}
+
+.full-section-hero .header-wrapper .header-name .socials-container {
+  margin: 0 50px 0 0;
+}
+
+.full-section-hero .header-wrapper .header-name .socials-container img {
+  width: 3.7rem;
+}
+
+.full-section-hero .header-wrapper .header-name .socials-container .linkedin-icon {
+  margin: 0 15px 0 0;
+}
+
+.full-section-hero .header-wrapper .header-name .socials-container .github-icon {
+  margin: 0 0 0 15px;
+}
+
+.about-section {
+  background-color: #F2F2F2;
+  color: #F2F2F2;
+  height: 100vh;
+}
+
+.about-section .ide-container {
+  margin: 0 0 0 0;
+}
+
+.about-section .ide-container .ide-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 3rem 0 0 0;
+  width: 120vh;
 }
 
 /*********   END Class Selctors     *****/

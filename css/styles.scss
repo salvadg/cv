@@ -1,122 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&display=swap');// Variables
-// Font Variables
 
-$Poppins: 'Poppins', sans-serif;
-// Font
-$Courier: 'Courier Prime', monospace;
-$medium-font: 25px;
-$large-font: 35px;
-$small-font: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
-// Color Pallete
-$orange: #FF9F1C;
-$black: #272D2D;
-$cyan: #2EC4B6;
-$red: #E71D36;
-$white: #FDFFFC;
+
+/****   VARIABLES   ****/
+// Font Families
+$Open-Sans: 'Open Sans', sans-serif;
+$source-code: 'Source Code Pro', monospace;
+$Montserrat: 'Montserrat', sans-serif;
+
+// Fonts Sizes
+
+$large-font: 6.25rem;
+$medium-font: 2.5rem;
+$medium-large: 3.1rem;
+$xtra-small: 1.25rem;
+$small-font: 1.56rem;
+
+/****   Color Pallete   ****/
+
+// Hero colors
+$yellow: #FFC72C;
+$black: #252422;
+$white: #F2F2F2;
+$blue: #3C91E6;
+
+// Main Body colors
+$grey: #989898;
+$green: #6FD08C;
+$lime: #A2D729;
+$dark-blue:#21252B;
+$blue-grey:#282C34;
 
 
 /**********  Tag selectors  *********/
 body{
-    // background-color: yellow;
+    background-color: $grey;
     margin: 0;
     padding: 0;
-    font-family: $Poppins;
+    color: $black;
 }
 
 /*******     End Tag selectors   *******/
 
 
 /********   Class Selctors     *****/
-.header-wrapper{
-    display: flex;
-    background-color: $cyan;
-    color: $black;
-    padding: 20px 0 20px 0;
-    .image-container{
-        margin: 0 0 0 15vw ;
-    }
-    .header-name{
-        padding: 0 0 0 60px;
-        font-size: $large-font;
-        text-align: center;
-
-        h1{
-            margin: 10% 8% 0 0;
-            
-        }
-
-        p{
-            margin: 10px 0 20px 0;
-            font-family: $Courier;
-            font-size: $medium-font;
-        }
-        .socials-container{
-            background: none;
-            ul{
-                margin: 0 17% 0 0;
-                img{
-                    height: 40px;
-                }
-                
-            }
-        }
-    
-    }
-}
-
-.about-wrapper{
-    background-color: $black;
+.full-section-hero{
+    background: $blue;
     color: $white;
-    height: 50vh;
-    .about-container{
-        margin: 0 0 0 8%;
-        padding: 50px 0 0 0;
-        text-align: center;
-        h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .header-wrapper{
+        .header-name{
+            text-align: center;
             margin:0;
-            padding: 20px 0 0 0;
-            color: $orange;
-            font-size: $large-font;
-        }
-        p{
-            margin: 10px 0 0 20%;
-            width: 60%;
-            font-size: $small-font;
+            font-size: $medium-font;
+            .logo-container{
+                margin:0;
+            }
+            .name{
+                margin:0;
+                font-family: $Montserrat;
+                font-size: $large-font;
+                font-weight: 700;
+                color:$yellow;
+            }
+            .occupation{
+                margin:0;
+                font-weight: 200;
+                font-family: $source-code;
+            }
+            .major{
+                margin:0;
+                font-weight: 200;
+                font-family: $source-code;
+            }
+            
+
+            .socials-container{
+                margin: 0 50px 0 0;
+                img{
+                    width: 3.7rem;
+                }
+                .linkedin-icon{
+                    margin: 0 15px 0 0;
+                }
+                .github-icon{
+                    margin: 0 0 0 15px;
+                }
+                    
+            }
+        
         }
     }
 }
 
-.construction-wrapper{
-    color: orange;
-    font-size: $large-font;
-    text-align: center;
-    padding: 50px;
-}
-.education-container{
-    // h3{
-    //     margin: 0;
-    // }
-    // background: orange;
-}
 
-.socials-container{
-    // background-color: cyan;
-}
-
-
-
-
-.skills-container{
-    // background: lime;
-}
-
-.projects-container{
-    // background: yellow;
-}
-
-.footer-container{
-    // background: grey;
+.about-section{
+    background-color: $white;
+    color: $white;
+    height: 100vh;
+    .ide-container{
+        // background: red;
+        margin: 0 0 0 0;
+        .ide-img{
+            display:flex;
+            // justify-items: center;
+            margin: auto;
+            padding: 3rem 0 0 0;
+            width: 120vh;
+            // height: 1000px;
+        }
+    }
 }
 
 /*********   END Class Selctors     *****/

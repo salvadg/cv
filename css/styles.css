@@ -35,7 +35,7 @@ body {
 }
 
 .full-section-hero .header-wrapper .header-name .logo-container {
-  margin: 0;
+  margin: 0 0 0 0;
 }
 
 .full-section-hero .header-wrapper .header-name .name {
@@ -44,6 +44,7 @@ body {
   font-size: 6.25rem;
   font-weight: 700;
   color: #FFC72C;
+  text-shadow: 2px 2px #31313162;
 }
 
 .full-section-hero .header-wrapper .header-name .occupation {

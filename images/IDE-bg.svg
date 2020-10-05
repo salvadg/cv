@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680.411" height="1197" viewBox="0 0 1680.411 1197">
+  <g id="IDE-dupe" transform="translate(-102.094 -1134)">
+    <g id="project-container">
+      <g id="laptop" transform="translate(-97 885.93)">
+        <rect id="background" width="1465.974" height="1044.166" transform="translate(319.958 354.118)" fill="#282c34"/>
+        <ellipse id="shadow" cx="840.206" cy="39.963" rx="840.206" ry="39.963" transform="translate(199.094 1365.143)" opacity="0.1"/>
+        <rect id="Rectangle_10" data-name="Rectangle 10" width="1466" height="106" transform="translate(320 248.07)" fill="#21252b"/>
+        <g id="window-buttons" transform="translate(12 9.216)">
+          <circle id="Ellipse_24" data-name="Ellipse 24" cx="10.437" cy="10.437" r="10.437" transform="translate(341.402 259.815)" fill="#ee6c5f"/>
+          <circle id="Ellipse_25" data-name="Ellipse 25" cx="10.437" cy="10.437" r="10.437" transform="translate(369.233 259.815)" fill="#f7c452"/>
+          <circle id="Ellipse_26" data-name="Ellipse 26" cx="10.437" cy="10.437" r="10.437" transform="translate(397.065 259.815)" fill="#62c554"/>
+        </g>
+        <g id="file_name" transform="translate(0 -7)">
+          <rect id="Rectangle_9" data-name="Rectangle 9" width="239" height="57" transform="translate(618 305.07)" fill="#282c34"/>
+        </g>
+      </g>
+    </g>
+    <g id="sidebar">
+      <path id="sidebar-bg" d="M0,0H297V1089H0Z" transform="translate(224 1191)" fill="#21252b"/>
+    </g>
+  </g>
+</svg>

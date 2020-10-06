@@ -12,7 +12,8 @@ $Montserrat: 'Montserrat', sans-serif;
 
 // Fonts Sizes
 
-$large-font: 6.25rem;
+// $large-font: 6.25rem;
+$large-font: 5.6rem;
 $medium-font: 2.5rem;
 $medium-large: 3.1rem;
 $xtra-small: 1.25rem;
@@ -24,7 +25,9 @@ $small-font: 1.56rem;
 $yellow: #FFC72C;
 $black: #252422;
 $white: #F2F2F2;
+$egg: #EBE2D8;
 $blue: #3C91E6;
+$dull-blue:#658E9D;
 
 // Main Body colors
 $grey: #989898;
@@ -47,7 +50,7 @@ body{
 
 /********   Class Selctors     *****/
 .full-section-hero{
-    background: $blue;
+    background: $dull-blue;
     color: $white;
     display: flex;
     align-items: center;
@@ -67,20 +70,24 @@ body{
                 font-size: $large-font;
                 font-weight: 700;
                 color:$yellow;
-                text-shadow: 2px 2px #31313162;
+                text-shadow: 2px 2px #07070762;
             }
             .occupation{
+                text-shadow: 2px 2px #07070762;
                 margin:0;
                 font-weight: 200;
                 font-family: $source-code;
             }
             .major{
                 margin:0;
+                text-shadow: 2px 2px #07070762;
                 font-weight: 200;
                 font-family: $source-code;
             }
-            
-
+            .hat-logo{
+                width: 165px; //144px;
+                height: 170px // 150
+            }
             .socials-container{
                 margin: 0 50px 0 0;
                 img{
@@ -101,7 +108,7 @@ body{
 
 
 .about-section{
-    background-color: $white;
+    background-color: $egg;
     color: $white;
     height: 100vh;
     .ide-container{

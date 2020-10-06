@@ -14,7 +14,7 @@ body {
 /*******     End Tag selectors   *******/
 /********   Class Selctors     *****/
 .full-section-hero {
-  background: #3C91E6;
+  background: #658E9D;
   color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,13 +41,14 @@ body {
 .full-section-hero .header-wrapper .header-name .name {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 6.25rem;
+  font-size: 5.6rem;
   font-weight: 700;
   color: #FFC72C;
-  text-shadow: 2px 2px #31313162;
+  text-shadow: 2px 2px #07070762;
 }
 
 .full-section-hero .header-wrapper .header-name .occupation {
+  text-shadow: 2px 2px #07070762;
   margin: 0;
   font-weight: 200;
   font-family: "Source Code Pro", monospace;
@@ -55,8 +56,14 @@ body {
 
 .full-section-hero .header-wrapper .header-name .major {
   margin: 0;
+  text-shadow: 2px 2px #07070762;
   font-weight: 200;
   font-family: "Source Code Pro", monospace;
+}
+
+.full-section-hero .header-wrapper .header-name .hat-logo {
+  width: 165px;
+  height: 170px;
 }
 
 .full-section-hero .header-wrapper .header-name .socials-container {
@@ -76,7 +83,7 @@ body {
 }
 
 .about-section {
-  background-color: #F2F2F2;
+  background-color: #EBE2D8;
   color: #F2F2F2;
   height: 100vh;
 }

@@ -85,11 +85,12 @@ p{
         
         .socials-container{
 
-            // .icon {
-            //     margin: 0 15px 0 0;
-            //     filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
-            //     width: 3.7rem;
-            // }
+            .icon{
+                margin: 0 15px 0 0;
+                filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
+                width: 3rem;
+                color: $white;
+            }
 
             // .github-icon{
             //     margin: 0 0 0 15px;
@@ -113,8 +114,8 @@ p{
             // justify-items: center;
             margin: auto;
             padding: 3rem 0 0 0;
-            width: 100vh;
-            // height: 1000px;
+            width: 100vw;
+            height: 100vh;
         }
     }
 }

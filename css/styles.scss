@@ -13,8 +13,8 @@ $Montserrat: 'Montserrat', sans-serif;
 // Fonts Sizes
 
 // $large-font: 6.25rem;
-$large-font: 5.6rem;
-$medium-font: 2.5rem;
+$large-font: 4.85rem;
+$medium-font: 2rem;
 $medium-large: 3.1rem;
 $xtra-small: 1.25rem;
 $small-font: 1.56rem;
@@ -26,6 +26,7 @@ $yellow: #FFC72C;
 $black: #252422;
 $white: #F2F2F2;
 $egg: #EBE2D8;
+$offwhite: #eceeec;
 $blue: #3C91E6;
 $dull-blue:#658E9D;
 
@@ -36,13 +37,15 @@ $lime: #A2D729;
 $dark-blue:#21252B;
 $blue-grey:#282C34;
 
-
 /**********  Tag selectors  *********/
 body{
     background-color: $grey;
     margin: 0;
     padding: 0;
-    color: $black;
+    // color: $black;
+}
+p{
+    margin:0;
 }
 
 /*******     End Tag selectors   *******/
@@ -56,59 +59,50 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    .header-wrapper{
-        .header-name{
-            text-align: center;
-            margin:0;
-            font-size: $medium-font;
-            .logo-container{
-                margin: 0 0 0 0;
-            }
-            .name{
-                margin:0;
-                font-family: $Montserrat;
-                font-size: $large-font;
-                font-weight: 700;
-                color:$yellow;
-                text-shadow: 2px 2px #07070762;
-            }
-            .occupation{
-                text-shadow: 2px 2px #07070762;
-                margin:0;
-                font-weight: 200;
-                font-family: $source-code;
-            }
-            .major{
-                margin:0;
-                text-shadow: 2px 2px #07070762;
-                font-weight: 200;
-                font-family: $source-code;
-            }
-            .hat-logo{
-                width: 165px; //144px;
-                height: 170px // 150
-            }
-            .socials-container{
-                margin: 0 50px 0 0;
-                img{
-                    width: 3.7rem;
-                }
-                .linkedin-icon{
-                    margin: 0 15px 0 0;
-                }
-                .github-icon{
-                    margin: 0 0 0 15px;
-                }
-                    
-            }
+
+    .intro-wrapper{
+        text-align: center;
+        margin: 0 25%;
+        font-size: $medium-font; 
+        text-shadow: 1px 2px 1px #000000; 
+        margin: 0 2rem 0 2rem;
         
+        .hat-logo-md{
+            display: inline-block;
+            text-align: center;
+            padding: 0.2rem 0.2rem;
         }
+        .name{
+            font-size: $large-font;
+            font-weight: 700;
+            color:$yellow;
+            font-family: $Montserrat;
+        }
+        .tagline {
+            font-weight: 200;
+            font-family: $source-code;
+        }
+        
+        .socials-container{
+
+            // .icon {
+            //     margin: 0 15px 0 0;
+            //     filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
+            //     width: 3.7rem;
+            // }
+
+            // .github-icon{
+            //     margin: 0 0 0 15px;
+            // }
+                
+        }
+        
     }
 }
 
 
 .about-section{
-    background-color: $egg;
+    background-color: #3e4d59; //offwhite ;
     color: $white;
     height: 100vh;
     .ide-container{
@@ -125,4 +119,42 @@ body{
     }
 }
 
+
+
 /*********   END Class Selctors     *****/
+
+// Mobile Styling
+
+// large
+@media screen and ( min-width: 770px ) {
+    .hat-logo img { width: 165px; }
+}
+//medium
+@media screen and (max-width: 769px){
+    .name p{
+        font-size: 3.2rem;
+    }
+    .tagline p{
+        font-size: 1.3rem;
+    }
+    .hat-logo img{
+        width: 100px; //10rem //144px;
+    }
+
+}
+
+// small
+@media screen and (max-width: 576px){
+    .name p{
+        font-size: 2rem;
+    }
+
+    .hat-logo img{
+        width: 70px; //10rem //144px;
+    }
+
+    .tagline p{
+        font-size: .9rem;
+    }
+    
+}

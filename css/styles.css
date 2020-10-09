@@ -8,7 +8,10 @@ body {
   background-color: #989898;
   margin: 0;
   padding: 0;
-  color: #252422;
+}
+
+p {
+  margin: 0;
 }
 
 /*******     End Tag selectors   *******/
@@ -28,62 +31,34 @@ body {
   height: 100vh;
 }
 
-.full-section-hero .header-wrapper .header-name {
+.full-section-hero .intro-wrapper {
   text-align: center;
-  margin: 0;
-  font-size: 2.5rem;
+  margin: 0 25%;
+  font-size: 2rem;
+  text-shadow: 1px 2px 1px #000000;
+  margin: 0 2rem 0 2rem;
 }
 
-.full-section-hero .header-wrapper .header-name .logo-container {
-  margin: 0 0 0 0;
+.full-section-hero .intro-wrapper .hat-logo-md {
+  display: inline-block;
+  text-align: center;
+  padding: 0.2rem 0.2rem;
 }
 
-.full-section-hero .header-wrapper .header-name .name {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 5.6rem;
+.full-section-hero .intro-wrapper .name {
+  font-size: 4.85rem;
   font-weight: 700;
   color: #FFC72C;
-  text-shadow: 2px 2px #07070762;
+  font-family: "Montserrat", sans-serif;
 }
 
-.full-section-hero .header-wrapper .header-name .occupation {
-  text-shadow: 2px 2px #07070762;
-  margin: 0;
+.full-section-hero .intro-wrapper .tagline {
   font-weight: 200;
   font-family: "Source Code Pro", monospace;
-}
-
-.full-section-hero .header-wrapper .header-name .major {
-  margin: 0;
-  text-shadow: 2px 2px #07070762;
-  font-weight: 200;
-  font-family: "Source Code Pro", monospace;
-}
-
-.full-section-hero .header-wrapper .header-name .hat-logo {
-  width: 165px;
-  height: 170px;
-}
-
-.full-section-hero .header-wrapper .header-name .socials-container {
-  margin: 0 50px 0 0;
-}
-
-.full-section-hero .header-wrapper .header-name .socials-container img {
-  width: 3.7rem;
-}
-
-.full-section-hero .header-wrapper .header-name .socials-container .linkedin-icon {
-  margin: 0 15px 0 0;
-}
-
-.full-section-hero .header-wrapper .header-name .socials-container .github-icon {
-  margin: 0 0 0 15px;
 }
 
 .about-section {
-  background-color: #EBE2D8;
+  background-color: #3e4d59;
   color: #F2F2F2;
   height: 100vh;
 }
@@ -102,4 +77,33 @@ body {
 }
 
 /*********   END Class Selctors     *****/
+@media screen and (min-width: 770px) {
+  .hat-logo img {
+    width: 165px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .name p {
+    font-size: 3.2rem;
+  }
+  .tagline p {
+    font-size: 1.3rem;
+  }
+  .hat-logo img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .name p {
+    font-size: 2rem;
+  }
+  .hat-logo img {
+    width: 70px;
+  }
+  .tagline p {
+    font-size: .9rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

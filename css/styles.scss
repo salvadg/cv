@@ -1,14 +1,12 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap");
 
 /****   VARIABLES   ****/
 // Font Families
-$Open-Sans: 'Open Sans', sans-serif;
-$source-code: 'Source Code Pro', monospace;
-$Montserrat: 'Montserrat', sans-serif;
+$Open-Sans: "Open Sans", sans-serif;
+$source-code: "Source Code Pro", monospace;
+$Montserrat: "Montserrat", sans-serif;
 
 // Fonts Sizes
 
@@ -22,140 +20,133 @@ $small-font: 1.56rem;
 /****   Color Pallete   ****/
 
 // Hero colors
-$yellow: #FFC72C;
+$yellow: #ffc72c;
 $black: #252422;
-$white: #F2F2F2;
-$egg: #EBE2D8;
+$white: #f2f2f2;
+$egg: #ebe2d8;
 $offwhite: #eceeec;
-$blue: #3C91E6;
-$dull-blue:#658E9D;
+$blue: #3c91e6;
+$dull-blue: #658e9d;
 
 // Main Body colors
 $grey: #989898;
-$green: #6FD08C;
-$lime: #A2D729;
-$dark-blue:#21252B;
-$blue-grey:#282C34;
+$green: #6fd08c;
+$lime: #a2d729;
+$dark-blue: #21252b;
+$blue-grey: #282c34;
 
 /**********  Tag selectors  *********/
-body{
-    background-color: $grey;
-    margin: 0;
-    padding: 0;
-    // color: $black;
+body {
+  background-color: $grey;
+  margin: 0;
+  padding: 0;
+  // color: $black;
 }
-p{
-    margin:0;
+p {
+  margin: 0;
 }
 
 /*******     End Tag selectors   *******/
 
-
 /********   Class Selctors     *****/
-.full-section-hero{
-    background: $dull-blue;
-    color: $white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.full-section-hero {
+  background: $dull-blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 
-    .intro-wrapper{
-        text-align: center;
-        margin: 0 25%;
-        font-size: $medium-font; 
-        text-shadow: 1px 2px 1px #000000; 
-        margin: 0 2rem 0 2rem;
-        
-        .hat-logo-md{
-            display: inline-block;
-            text-align: center;
-            padding: 0.2rem 0.2rem;
-        }
-        .name{
-            font-size: $large-font;
-            font-weight: 700;
-            color:$yellow;
-            font-family: $Montserrat;
-        }
-        .tagline {
-            font-weight: 200;
-            font-family: $source-code;
-        }
-        
-        .socials-container{
+  .intro-wrapper {
+    text-align: center;
+    margin: 0 25%;
+    font-size: $medium-font;
+    text-shadow: 1px 2px 1px #000000;
+    margin: 0 2rem 0 2rem;
 
-            .icon{
-                margin: 0 15px 0 0;
-                filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
-                width: 3rem;
-                color: $white;
-            }
-
-            // .github-icon{
-            //     margin: 0 0 0 15px;
-            // }
-                
-        }
-        
+    .hat-logo-md {
+      display: inline-block;
+      text-align: center;
+      padding: 0.2rem 0.2rem;
     }
+    .name {
+      font-size: $large-font;
+      font-weight: 700;
+      color: $yellow;
+      font-family: $Montserrat;
+    }
+    .tagline {
+      font-weight: 200;
+      font-family: $source-code;
+    }
+
+    .socials-container {
+      .icon {
+        margin: 0 15px 0 0;
+        filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
+        width: 3rem;
+        color: $white;
+      }
+
+      // .github-icon{
+      //     margin: 0 0 0 15px;
+      // }
+    }
+  }
 }
 
-
-.about-section{
-    background-color: $egg;//3e4d59; //offwhite ;
-    color: $white;
-    height: 100vh;
-    .ide-container{
-        // background: red;
-        margin: 0 0 0 0;
-        .ide-img{
-            display:flex;
-            // justify-items: center;
-            margin: auto;
-            padding: 3rem 0 0 0;
-            width: 100vw;
-            height: 100vh;
-        }
+.about-section {
+  background-color: $egg; //3e4d59; //offwhite ;
+  color: $white;
+  height: 100vh;
+  .ide-container {
+    // background: red;
+    margin: 0 0 0 0;
+    .ide-img {
+      display: flex;
+      // justify-items: center;
+      margin: auto;
+      padding: 3rem 0 0 0;
+      width: 100vw;
+      height: 100vh;
     }
+  }
 }
-
-
 
 /*********   END Class Selctors     *****/
 
 // Mobile Styling
 
 // large
-@media screen and ( min-width: 770px ) {
-    .hat-logo img { width: 165px; }
+@media screen and (min-width: 769px) {
+  .hat-logo img {
+    width: 165px;
+  }
 }
 //medium
-@media screen and (max-width: 769px){
-    .name p{
-        font-size: 3.2rem;
-    }
-    .tagline p{
-        font-size: 1.3rem;
-    }
-    .hat-logo img{
-        width: 100px; //10rem //144px;
-    }
-
+@media screen and (max-width: 768px) {
+  .name p {
+    font-size: 3.5rem;
+  }
+  .tagline p {
+    font-size: 1.6rem;
+  }
+  .hat-logo img {
+    width: 100px; //10rem //144px;
+  }
 }
 
 // small
-@media screen and (max-width: 576px){
-    .name p{
-        font-size: 2rem;
-    }
+@media screen and (max-width: 576px) {
+  .name p {
+    font-size: 3rem;
+  }
 
-    .hat-logo img{
-        width: 70px; //10rem //144px;
-    }
+  .hat-logo img {
+    width: 70px; //10rem //144px;
+  }
 
-    .tagline p{
-        font-size: .9rem;
-    }
-    
+  .tagline p {
+    font-size: 1.3rem;
+  }
 }

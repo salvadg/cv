@@ -17,8 +17,8 @@ p {
 /*******     End Tag selectors   *******/
 /********   Class Selctors     *****/
 .full-section-hero {
-  background: #658E9D;
-  color: #F2F2F2;
+  background: #658e9d;
+  color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ p {
 .full-section-hero .intro-wrapper .name {
   font-size: 4.85rem;
   font-weight: 700;
-  color: #FFC72C;
+  color: #ffc72c;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -62,12 +62,12 @@ p {
   -webkit-filter: drop-shadow(0px 2px 0px #3a3a3a);
           filter: drop-shadow(0px 2px 0px #3a3a3a);
   width: 3rem;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .about-section {
-  background-color: #EBE2D8;
-  color: #F2F2F2;
+  background-color: #ebe2d8;
+  color: #f2f2f2;
   height: 100vh;
 }
 
@@ -86,18 +86,18 @@ p {
 }
 
 /*********   END Class Selctors     *****/
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 769px) {
   .hat-logo img {
     width: 165px;
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .name p {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
   .tagline p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .hat-logo img {
     width: 100px;
@@ -106,13 +106,13 @@ p {
 
 @media screen and (max-width: 576px) {
   .name p {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .hat-logo img {
     width: 70px;
   }
   .tagline p {
-    font-size: .9rem;
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

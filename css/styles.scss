@@ -7,12 +7,12 @@
 $Open-Sans: "Open Sans", sans-serif;
 $source-code: "Source Code Pro", monospace;
 $Montserrat: "Montserrat", sans-serif;
-
+$vt323: "VT323", monospace;
 // Fonts Sizes
 
 // $large-font: 6.25rem;
 $large-font: 4.85rem;
-$medium-font: 2rem;
+$medium-font: 2.5rem;
 $medium-large: 3.1rem;
 $xtra-small: 1.25rem;
 $small-font: 1.56rem;
@@ -40,7 +40,6 @@ body {
   background-color: $grey;
   margin: 0;
   padding: 0;
-  // color: $black;
 }
 p {
   margin: 0;
@@ -51,46 +50,42 @@ p {
 /********   Class Selctors     *****/
 .full-section-hero {
   background: $dull-blue;
-  color: $white;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-
+  color: $white;
+  .intro-text {
+    text-shadow: 1px 2px 1px #000000;
+    font-size: $medium-font;
+    font-family: $Montserrat;
+  }
   .intro-wrapper {
     text-align: center;
-    margin: 0 25%;
-    font-size: $medium-font;
-    text-shadow: 1px 2px 1px #000000;
-    margin: 0 2rem 0 2rem;
-
     .hat-logo-md {
-      display: inline-block;
-      text-align: center;
-      padding: 0.2rem 0.2rem;
+      padding: 1% 1%;
     }
     .name {
       font-size: $large-font;
       font-weight: 700;
       color: $yellow;
-      font-family: $Montserrat;
     }
     .tagline {
-      font-weight: 200;
-      font-family: $source-code;
+      font-weight: 400;
+      font-size: $medium-font;
+      line-height: 1;
+      font-family: $vt323;
     }
 
     .socials-container {
-      .icon {
-        margin: 0 15px 0 0;
-        filter: drop-shadow(0px 2px 0px rgb(58, 58, 58));
-        width: 3rem;
+      padding: 30px;
+      .social-icon {
+        padding: 20px;
         color: $white;
+        filter: drop-shadow(0.5px 0.5px 2px rgb(54, 54, 54));
       }
-
-      // .github-icon{
-      //     margin: 0 0 0 15px;
-      // }
+      .social-icon:hover {
+        color: #e0e0da;
+      }
     }
   }
 }
@@ -99,16 +94,153 @@ p {
   background-color: $egg; //3e4d59; //offwhite ;
   color: $white;
   height: 100vh;
+  .ide-wrapper * {
+    margin: 0;
+    padding: 0;
+  }
+  .ide-wrapper {
+    // height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin: 0 0 0 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // .ide-img {
+    //   display: flex;
+    //   justify-items: center;
+    //   margin: auto;
+    //   padding: 3rem 0 0 0;
+    //   width: 100vw;
+    //   height: 100vh;
+    // }
+  }
+
+  .ide-header {
+    position: absolute;
+    width: 946px;
+    z-index: 1;
+    height: 100px;
+  }
   .ide-container {
-    // background: red;
-    margin: 0 0 0 0;
-    .ide-img {
-      display: flex;
-      // justify-items: center;
-      margin: auto;
-      padding: 3rem 0 0 0;
-      width: 100vw;
-      height: 100vh;
+    width: 946px;
+    height: 647px;
+    background: $dark-blue;
+    border-radius: 1%;
+
+    box-shadow: 2px 8px 8px #1f1f1fa6;
+    display: grid;
+    grid-template-columns: 0.35fr 0.35fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "sidebar sidebar tabs tabs tabs"
+      "sidebar sidebar tabs tabs tabs"
+      "sidebar sidebar body body body"
+      "sidebar sidebar body body body"
+      "sidebar sidebar body body body"
+      "sidebar sidebar body body body";
+  }
+  .tabs {
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    grid-area: tabs;
+    p {
+      padding: 0.6rem 2rem 0.6rem 2rem;
+      font-size: 0.9rem;
+      background: $blue-grey;
+      border-right: 1px solid black;
+    }
+    span {
+      margin-right: 0.5rem;
+      color: $yellow;
+    }
+  }
+
+  .sidebar {
+    font-weight: bold;
+    span {
+      font-size: 1rem;
+      font-weight: 100;
+      padding: 0 0 0 3.5%;
+    }
+    p {
+      line-height: 2.5;
+    }
+    grid-area: sidebar;
+    font-family: $source-code;
+
+    .skills-tab {
+      background: $blue-grey;
+    }
+    .projects-tab {
+    }
+    .education-tab {
+    }
+
+    .sidebar-title {
+      font-size: 0.8rem;
+
+      font-weight: lighter;
+      margin-left: 1.5rem;
+      margin-top: 6%;
+    }
+  }
+
+  .body {
+    padding: 2% 5%;
+    background: $blue-grey;
+    grid-area: body;
+    box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
+    .language-icons {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "python html java . . .";
+      margin-top: 1rem;
+
+      .java {
+        grid-area: java;
+      }
+      .python {
+        grid-area: python;
+      }
+      .html {
+        grid-area: html;
+      }
+      img {
+        width: 40%;
+        padding-bottom: 1rem;
+      }
+    }
+    .body-lead-text {
+      font-size: $small-font;
+      margin: 5% 0 0 0;
+      span {
+        color: salmon;
+      }
+    }
+  }
+
+  .dots {
+    padding: 5px 1rem;
+    div {
+      display: inline-block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+    }
+    .red {
+      background: #ee6c5f;
+    }
+    .yellow {
+      background: #f7c452;
+    }
+    .green {
+      background: #62c554;
     }
   }
 }
@@ -122,6 +254,9 @@ p {
   .hat-logo img {
     width: 165px;
   }
+  .socials-container i {
+    font-size: 4rem;
+  }
 }
 //medium
 @media screen and (max-width: 768px) {
@@ -129,17 +264,21 @@ p {
     font-size: 3.5rem;
   }
   .tagline p {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .hat-logo img {
     width: 100px; //10rem //144px;
+  }
+  .socials-container i {
+    display: block;
+    font-size: 3.5rem;
   }
 }
 
 // small
 @media screen and (max-width: 576px) {
   .name p {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .hat-logo img {
@@ -147,6 +286,11 @@ p {
   }
 
   .tagline p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+  }
+
+  .socials-container i {
+    display: block;
+    font-size: 3.5rem;
   }
 }

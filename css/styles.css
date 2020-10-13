@@ -18,51 +18,56 @@ p {
 /********   Class Selctors     *****/
 .full-section-hero {
   background: #658e9d;
-  color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
+  color: #f2f2f2;
+}
+
+.full-section-hero .intro-text {
+  text-shadow: 1px 2px 1px #000000;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .full-section-hero .intro-wrapper {
   text-align: center;
-  margin: 0 25%;
-  font-size: 2rem;
-  text-shadow: 1px 2px 1px #000000;
-  margin: 0 2rem 0 2rem;
 }
 
 .full-section-hero .intro-wrapper .hat-logo-md {
-  display: inline-block;
-  text-align: center;
-  padding: 0.2rem 0.2rem;
+  padding: 1% 1%;
 }
 
 .full-section-hero .intro-wrapper .name {
   font-size: 4.85rem;
   font-weight: 700;
   color: #ffc72c;
-  font-family: "Montserrat", sans-serif;
 }
 
 .full-section-hero .intro-wrapper .tagline {
-  font-weight: 200;
-  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-family: "VT323", monospace;
 }
 
-.full-section-hero .intro-wrapper .socials-container .icon {
-  margin: 0 15px 0 0;
-  -webkit-filter: drop-shadow(0px 2px 0px #3a3a3a);
-          filter: drop-shadow(0px 2px 0px #3a3a3a);
-  width: 3rem;
+.full-section-hero .intro-wrapper .socials-container {
+  padding: 30px;
+}
+
+.full-section-hero .intro-wrapper .socials-container .social-icon {
+  padding: 20px;
   color: #f2f2f2;
+  -webkit-filter: drop-shadow(0.5px 0.5px 2px #363636);
+          filter: drop-shadow(0.5px 0.5px 2px #363636);
+}
+
+.full-section-hero .intro-wrapper .socials-container .social-icon:hover {
+  color: #e0e0da;
 }
 
 .about-section {
@@ -71,24 +76,192 @@ p {
   height: 100vh;
 }
 
-.about-section .ide-container {
-  margin: 0 0 0 0;
+.about-section .ide-wrapper * {
+  margin: 0;
+  padding: 0;
 }
 
-.about-section .ide-container .ide-img {
+.about-section .ide-wrapper {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  padding: 3rem 0 0 0;
-  width: 100vw;
-  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-section .ide-header {
+  position: absolute;
+  width: 946px;
+  z-index: 1;
+  height: 100px;
+}
+
+.about-section .ide-container {
+  width: 946px;
+  height: 647px;
+  background: #21252b;
+  border-radius: 1%;
+  -webkit-box-shadow: 2px 8px 8px #1f1f1fa6;
+          box-shadow: 2px 8px 8px #1f1f1fa6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.35fr 0.35fr 1fr 1fr 1fr;
+      grid-template-columns: 0.35fr 0.35fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.3fr 0.3fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.3fr 0.3fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "sidebar sidebar tabs tabs tabs" "sidebar sidebar tabs tabs tabs" "sidebar sidebar body body body" "sidebar sidebar body body body" "sidebar sidebar body body body" "sidebar sidebar body body body";
+}
+
+.about-section .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: tabs;
+}
+
+.about-section .tabs p {
+  padding: 0.6rem 2rem 0.6rem 2rem;
+  font-size: 0.9rem;
+  background: #282c34;
+  border-right: 1px solid black;
+}
+
+.about-section .tabs span {
+  margin-right: 0.5rem;
+  color: #ffc72c;
+}
+
+.about-section .sidebar {
+  font-weight: bold;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: sidebar;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about-section .sidebar span {
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0 0 0 3.5%;
+}
+
+.about-section .sidebar p {
+  line-height: 2.5;
+}
+
+.about-section .sidebar .skills-tab {
+  background: #282c34;
+}
+
+.about-section .sidebar .sidebar-title {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  margin-left: 1.5rem;
+  margin-top: 6%;
+}
+
+.about-section .body {
+  padding: 2% 5%;
+  background: #282c34;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: body;
+  -webkit-box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
+          box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
+}
+
+.about-section .body .language-icons {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "python html java . . .";
+  margin-top: 1rem;
+}
+
+.about-section .body .language-icons .java {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: java;
+}
+
+.about-section .body .language-icons .python {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: python;
+}
+
+.about-section .body .language-icons .html {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: html;
+}
+
+.about-section .body .language-icons img {
+  width: 40%;
+  padding-bottom: 1rem;
+}
+
+.about-section .body .body-lead-text {
+  font-size: 1.56rem;
+  margin: 5% 0 0 0;
+}
+
+.about-section .body .body-lead-text span {
+  color: salmon;
+}
+
+.about-section .dots {
+  padding: 5px 1rem;
+}
+
+.about-section .dots div {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+
+.about-section .dots .red {
+  background: #ee6c5f;
+}
+
+.about-section .dots .yellow {
+  background: #f7c452;
+}
+
+.about-section .dots .green {
+  background: #62c554;
 }
 
 /*********   END Class Selctors     *****/
 @media screen and (min-width: 769px) {
   .hat-logo img {
     width: 165px;
+  }
+  .socials-container i {
+    font-size: 4rem;
   }
 }
 
@@ -97,22 +270,30 @@ p {
     font-size: 3.5rem;
   }
   .tagline p {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   .hat-logo img {
     width: 100px;
+  }
+  .socials-container i {
+    display: block;
+    font-size: 3.5rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .name p {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .hat-logo img {
     width: 70px;
   }
   .tagline p {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+  }
+  .socials-container i {
+    display: block;
+    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,14 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Salvador</title>
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <!-- css style sheets -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- favicons -->
     <link rel="icon" href="images/favicon.ico" />
+    <!-- google font links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome icons -->
     <script src="https://use.fontawesome.com/2532236f8c.js"></script>
   </head>
 
@@ -22,24 +31,24 @@
             <img src="images/my-icon-dark.svg" alt="logo" />
           </div>
 
-          <div class="name">
+          <div class="name intro-text">
             <p>Hi. I'm Salvador.</p>
           </div>
-          <div class="tagline">
+          <div class="tagline intro-text">
             <p class="occupation-txt">Software Developer</p>
             <p class="major-txt">CS Major</p>
           </div>
           <div class="socials-container">
             <ul>
               <a
-                class="linkedin-link"
+                class="linkedin-link social-icon"
                 aria-label="LinkedIn"
                 target="_blank"
                 href="https://www.linkedin.com/in/salvadjg/"
                 ><i class="fa fa-linkedin icon"></i
               ></a>
               <a
-                class="github-link"
+                class="github-link social-icon"
                 aria-label="Github"
                 target="_blank"
                 href="https://github.com/salvadg"
@@ -51,8 +60,32 @@
       </section>
 
       <section class="about-section">
-        <div class="ide-container">
-          <img class="ide-img" src="images/IDE-bg.svg" alt="ide background" />
+        <div class="ide-wrapper">
+          <div class="ide-container">
+            <div class="tabs">
+              <p class="file"><> File.txt</p>
+            </div>
+            <div class="sidebar">
+              <div class="dots">
+                <p>* * *</p>
+              </div>
+              <div class="sidebar-title">
+                <p>EXPLORER</p>
+              </div>
+              <div class="skills">
+                <p><span>></span> Skills</p>
+              </div>
+              <div class="projects">
+                <p><span>></span> Projects</p>
+              </div>
+              <div class="education">
+                <p><span>></span> Education</p>
+              </div>
+            </div>
+            <div class="body">
+              <p>LANGUAGES</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -74,49 +107,3 @@
     ></script>
   </body>
 </html>
-
-<!-- <div class="card-deck mb-3 text-center">
-    <div class="card mb-4 box-shadow">
-      <div class="card-header card-header-bg">
-        <h4 class="my-0 font-weight-normal">Chihuahua</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">Free</h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>5 Matches Per Day</li>
-          <li>10 Messages Per Day</li>
-          <li>Unlimited App Usage</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign up for free</button>
-      </div>
-    </div>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Labrador</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Unlimited Matches</li>
-          <li>Unlimited Messages</li>
-          <li>Unlimited App Usage</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-dark">Get started</button>
-      </div>
-    </div>
-    <div class="card mb-4 box-shadow">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Mastiff</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Pirority Listing</li>
-          <li>Unlimited Matches</li>
-          <li>Unlimited Messages</li>
-          <li>Unlimited App Usage</li>
-        </ul>
-        <button type="button" class="btn btn-lg btn-block btn-dark">Contact us</button>
-      </div>
-    </div>
-  </div> -->

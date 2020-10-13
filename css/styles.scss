@@ -48,11 +48,13 @@ p {
 /*******     End Tag selectors   *******/
 
 /********   Class Selctors     *****/
+
 .full-section-hero {
+  min-height: 600px;
+  height: 100vh;
   background: $dull-blue;
   display: flex;
   align-items: center;
-  height: 100vh;
   color: $white;
   .intro-text {
     text-shadow: 1px 2px 1px #000000;
@@ -93,29 +95,17 @@ p {
 .about-section {
   background-color: $egg; //3e4d59; //offwhite ;
   color: $white;
-  height: 100vh;
-  .ide-wrapper * {
-    margin: 0;
-    padding: 0;
-  }
+  height: 100%;
+
   .ide-wrapper {
-    // height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // margin: 0 0 0 0;
-    height: 100vh;
+    * {
+      margin: 0;
+      padding: 0;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
-    // .ide-img {
-    //   display: flex;
-    //   justify-items: center;
-    //   margin: auto;
-    //   padding: 3rem 0 0 0;
-    //   width: 100vw;
-    //   height: 100vh;
-    // }
+    height: 750px;
   }
 
   .ide-header {
@@ -129,7 +119,7 @@ p {
     height: 647px;
     background: $dark-blue;
     border-radius: 1%;
-
+    // height: 70vh;
     box-shadow: 2px 8px 8px #1f1f1fa6;
     display: grid;
     grid-template-columns: 0.35fr 0.35fr 1fr 1fr 1fr;

@@ -17,6 +17,8 @@ p {
 /*******     End Tag selectors   *******/
 /********   Class Selctors     *****/
 .full-section-hero {
+  min-height: 600px;
+  height: 100vh;
   background: #658e9d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +26,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   color: #f2f2f2;
 }
 
@@ -73,16 +74,10 @@ p {
 .about-section {
   background-color: #ebe2d8;
   color: #f2f2f2;
-  height: 100vh;
-}
-
-.about-section .ide-wrapper * {
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
 .about-section .ide-wrapper {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +87,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 750px;
+}
+
+.about-section .ide-wrapper * {
+  margin: 0;
+  padding: 0;
 }
 
 .about-section .ide-header {

@@ -176,7 +176,7 @@ p {
   margin-top: 6%;
 }
 
-.about-section .body {
+.about-section .ide-body {
   padding: 2% 5%;
   background: #282c34;
   -ms-grid-row: 3;
@@ -188,47 +188,22 @@ p {
           box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
 }
 
-.about-section .body .language-icons {
-  list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "python html java . . .";
-  margin-top: 1rem;
+.about-section .ide-body .languages-body .icon-wrapper li {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 25px 0px 0;
 }
 
-.about-section .body .language-icons .java {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: java;
+.about-section .ide-body .languages-body .icon-wrapper img {
+  width: 30px;
 }
 
-.about-section .body .language-icons .python {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: python;
-}
-
-.about-section .body .language-icons .html {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: html;
-}
-
-.about-section .body .language-icons img {
-  width: 40%;
-  padding-bottom: 1rem;
-}
-
-.about-section .body .body-lead-text {
+.about-section .ide-body .body-lead-text {
   font-size: 1.56rem;
   margin: 5% 0 0 0;
 }
 
-.about-section .body .body-lead-text span {
+.about-section .ide-body .body-lead-text span {
   color: salmon;
 }
 

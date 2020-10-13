@@ -182,38 +182,27 @@ p {
 
     .sidebar-title {
       font-size: 0.8rem;
-
       font-weight: lighter;
       margin-left: 1.5rem;
       margin-top: 6%;
     }
   }
 
-  .body {
+  .ide-body {
     padding: 2% 5%;
     background: $blue-grey;
     grid-area: body;
     box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
-    .language-icons {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "python html java . . .";
-      margin-top: 1rem;
-
-      .java {
-        grid-area: java;
-      }
-      .python {
-        grid-area: python;
-      }
-      .html {
-        grid-area: html;
-      }
-      img {
-        width: 40%;
-        padding-bottom: 1rem;
+    .languages-body {
+      .icon-wrapper {
+        li {
+          text-align: center;
+          display: inline-block;
+          padding: 15px 25px 0px 0;
+        }
+        img {
+          width: 30px;
+        }
       }
     }
     .body-lead-text {

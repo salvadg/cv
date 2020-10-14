@@ -186,7 +186,7 @@ p {
 }
 
 .about-section .ide-body {
-  padding: 2% 5%;
+  padding: 0 5%;
   background: #282c34;
   -ms-grid-row: 3;
   -ms-grid-row-span: 4;
@@ -215,11 +215,23 @@ p {
 
 .about-section .ide-body .body-lead-text {
   font-size: 1.56rem;
-  margin: 5% 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .about-section .ide-body .body-lead-text span {
   color: salmon;
+}
+
+.about-section .projects-body {
+  font-size: 1.3rem;
+}
+
+.about-section .projects-body .assign {
+  color: orange;
+}
+
+.about-section .projects-body .value {
+  color: #98c379;
 }
 
 .about-section .dots {

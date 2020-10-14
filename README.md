@@ -7,6 +7,5 @@ Page Under Construction
 ## TODO
 
 - Code refactoring
-- Implement clickables in About me section
-- Fill about me
+- add projects
 - optimize design for mobile

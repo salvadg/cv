@@ -74,17 +74,37 @@
               <div class="sidebar-title">
                 <p>EXPLORER</p>
               </div>
-              <div class="skills-tab">
+
+              <div
+                class="skills-tab tablinks active"
+                onclick="displayBody(event, 'skills-content')"
+                style="cursor: pointer"
+              >
                 <p><span>></span> SKILLS</p>
               </div>
-              <div class="projects-tab">
+              <div
+                class="projects-tab tablinks"
+                onclick="displayBody(event, 'projects-content')"
+                style="cursor: pointer"
+              >
                 <p><span>></span> PROJECTS</p>
               </div>
-              <div class="education-tab">
+              <div
+                class="education-tab tablinks"
+                onclick="displayBody(event, 'education-content')"
+                style="cursor: pointer"
+              >
                 <p><span>></span> EDUCATION</p>
               </div>
             </div>
-            <div class="ide-body">
+
+            <div id="projects-content" class="ide-body tabcontent">
+              projects
+            </div>
+            <div id="education-content" class="ide-body tabcontent">
+              EDUCATION
+            </div>
+            <div id="skills-content" class="ide-body tabcontent active">
               <div class="body-text-wrapper language-wrapper">
                 <p class="body-lead-text">
                   <<span>h1</span>> Languages <&#47;<span>h1</span>>
@@ -125,7 +145,6 @@
                   </li>
                 </ul>
               </div>
-
               <div class="body-text-wrapper technologies-wrapper">
                 <p class="body-lead-text">
                   <<span>h1</span>> Technologies <&#47;<span>h1</span>>
@@ -169,5 +188,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <script src="scripts/tab-actions.js"></script>
   </body>
 </html>

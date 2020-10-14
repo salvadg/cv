@@ -1,4 +1,4 @@
-function displayBody(evt, tabName) {
+function displayBody(evt, tabName, fileName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -17,5 +17,6 @@ function displayBody(evt, tabName) {
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(tabName).style.display = "block";
   document.getElementById(tabName).style.display = "block";
+  document.getElementById("file-text").innerText = fileName;
   evt.currentTarget.className += " active";
 }

@@ -63,7 +63,10 @@
         <div class="ide-wrapper">
           <div class="ide-container">
             <div class="tabs">
-              <p class="file"><> File.txt</p>
+              <div id="file-name" class="file-wrapper">
+                <i class="fa fa-file file-icon"></i>
+                <p id="file-text">skills.txt</p>
+              </div>
             </div>
             <div class="sidebar">
               <div class="dots">
@@ -77,21 +80,21 @@
 
               <div
                 class="skills-tab tablinks active"
-                onclick="displayBody(event, 'skills-content')"
+                onclick="displayBody(event, 'skills-content', 'skills.txt')"
                 style="cursor: pointer"
               >
                 <p><span>></span> SKILLS</p>
               </div>
               <div
                 class="projects-tab tablinks"
-                onclick="displayBody(event, 'projects-content')"
+                onclick="displayBody(event, 'projects-content', 'projects.txt')"
                 style="cursor: pointer"
               >
                 <p><span>></span> PROJECTS</p>
               </div>
               <div
                 class="education-tab tablinks"
-                onclick="displayBody(event, 'education-content')"
+                onclick="displayBody(event, 'education-content', 'education.txt')"
                 style="cursor: pointer"
               >
                 <p><span>></span> EDUCATION</p>

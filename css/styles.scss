@@ -162,8 +162,14 @@ p {
     grid-area: sidebar;
     font-family: $source-code;
 
-    .skills-tab {
+    .active {
+      background-color: $blue-grey;
+    }
+    .tablinks:hover {
       background: $blue-grey;
+    }
+    .skills-tab {
+      // background: $blue-grey;
     }
     .projects-tab {
     }

@@ -166,7 +166,11 @@ p {
   line-height: 2.5;
 }
 
-.about-section .sidebar .skills-tab {
+.about-section .sidebar .active {
+  background-color: #282c34;
+}
+
+.about-section .sidebar .tablinks:hover {
   background: #282c34;
 }
 

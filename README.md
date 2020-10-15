@@ -6,6 +6,5 @@ Page Under Construction
 
 ## TODO
 
-- Code refactoring
-- add projects
+- Code refactoring.
 - optimize design for mobile

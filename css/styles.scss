@@ -23,9 +23,7 @@ $small-font: 1.56rem;
 $yellow: #ffc72c;
 $black: #252422;
 $white: #f2f2f2;
-$egg: #ebe2d8;
 $offwhite: #eceeec;
-$blue: #3c91e6;
 $dull-blue: #658e9d;
 
 // Main Body colors
@@ -51,35 +49,33 @@ p {
   min-height: 600px;
   height: 100vh;
   background: $dull-blue;
+  // padding: auto 0;
   display: flex;
   align-items: center;
   color: $white;
-  .intro-text {
-    text-shadow: 1px 2px 1px #000000;
-    font-size: $medium-font;
-    font-family: $Montserrat;
-  }
+
   .intro-wrapper {
     text-align: center;
-    .hat-logo-md {
-      padding: 1% 1%;
+    font-size: $medium-font;
+    .hero-text {
+      text-shadow: 1px 2px 1px #000000;
+      font-family: $Montserrat;
     }
-    .name {
+    .name-lg {
       font-size: $large-font;
       font-weight: 700;
       color: $yellow;
     }
-    .tagline {
+    .hero-tagline {
       font-weight: 400;
-      font-size: $medium-font;
       line-height: 1;
       font-family: $vt323;
     }
 
     .socials-container {
-      padding: 30px;
+      margin: 30px 35px 0 0;
       .social-icon {
-        padding: 20px;
+        margin: 0 15px;
         color: $white;
         filter: drop-shadow(0.5px 0.5px 2px rgb(54, 54, 54));
       }
@@ -91,15 +87,11 @@ p {
 }
 
 .about-section {
-  background-color: $egg; //3e4d59; //offwhite ;
+  background-color: $offwhite; //3e4d59; //offwhite ;
   color: $white;
   height: 100%;
 
   .ide-wrapper {
-    * {
-      margin: 0;
-      padding: 0;
-    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,9 +108,8 @@ p {
     width: 946px;
     height: 647px;
     background: $dark-blue;
-    border-radius: 1%;
-    // height: 70vh;
-    box-shadow: 2px 8px 8px #1f1f1fa6;
+    border-radius: 1%; //rounded edges
+    box-shadow: 2px 8px 8px #1f1f1fa6; // ide shadow
     display: grid;
     grid-template-columns: 0.35fr 0.35fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 0.3fr 1fr 1fr 1fr 1fr;
@@ -133,13 +124,21 @@ p {
   .tabs {
     display: flex;
     align-items: flex-end;
-    align-content: center;
     grid-area: tabs;
 
     .file-wrapper {
+      display: none; // hide file tabs except active tab
+      color: #989898c7; // all files greyed out text except active file
+      padding: 0.6rem 2rem 0.6rem 2rem; // creates tab shape through padding
+      border-right: 1.2px solid black;
+    }
+    .active {
+      display: block;
+      .file-icon {
+        color: $yellow;
+      }
+      color: $white;
       background: $blue-grey;
-      padding: 0.6rem 2rem 0.6rem 2rem;
-      border-right: 1px solid black;
     }
     #file-text {
       display: inline;
@@ -147,7 +146,7 @@ p {
     }
     .file-icon {
       margin-right: 5px;
-      color: $yellow;
+      color: #ffc72c8a;
     }
   }
 
@@ -167,7 +166,7 @@ p {
     .active {
       background-color: $blue-grey;
     }
-    .tablinks:hover {
+    .sidebar-links:hover {
       background: $blue-grey;
     }
     .skills-tab {
@@ -186,22 +185,42 @@ p {
     }
   }
 
+  .project-description {
+    h4 {
+      color: $yellow;
+      padding: 10px 0;
+    }
+    ul {
+      padding-left: 3rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .description {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  }
+
   .ide-body {
     padding: 0 5%;
     background: $blue-grey;
     grid-area: body;
-    box-shadow: inset 0 3px 5px rgba(32, 32, 32, 0.582);
+    box-shadow: inset 0 1px 1px rgba(32, 32, 32, 0.582);
     .body-text-wrapper {
       .img-text {
         padding: 10px 0;
         color: $grey;
-        font-size: 0.7rem;
+        font-size: 1rem;
       }
       .icon-wrapper {
+        padding: 0;
         li {
           text-align: center;
           display: inline-block;
-          padding: 15px 25px 0px 0;
+          padding: 15px 25px 0px 0px;
         }
         img {
           width: 50px;
@@ -211,14 +230,12 @@ p {
 
     .body-lead-text {
       font-size: $small-font;
-      margin: 5px 0 0 0;
-      span {
-        color: salmon;
-      }
+      margin: 15px 0 0 0;
     }
   }
 
   .projects-body {
+    padding-top: 10px;
     font-size: 1.3rem;
     .assign {
       color: orange;
@@ -263,37 +280,43 @@ p {
 }
 //medium
 @media screen and (max-width: 768px) {
-  .name p {
+  .name-lg p {
     font-size: 3.5rem;
   }
-  .tagline p {
+  .hero-tagline p {
     font-size: 2rem;
   }
   .hat-logo img {
-    width: 100px; //10rem //144px;
+    width: 100px;
+  }
+
+  .social-icon {
+    padding: 12px;
+    display: block;
   }
   .socials-container i {
-    display: block;
     font-size: 3.5rem;
   }
 }
 
 // small
 @media screen and (max-width: 576px) {
-  .name p {
+  .name-lg p {
     font-size: 2.8rem;
   }
 
   .hat-logo img {
-    width: 70px; //10rem //144px;
+    width: 70px;
   }
 
-  .tagline p {
+  .hero-tagline p {
     font-size: 1.7rem;
   }
 
+  .social-icon {
+    padding: 8px 0;
+  }
   .socials-container i {
-    display: block;
-    font-size: 3.5rem;
+    font-size: 2.7rem;
   }
 }

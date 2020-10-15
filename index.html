@@ -25,16 +25,16 @@
 
   <body>
     <div class="site-wrapper">
-      <section class="full-section-hero container-fluid">
+      <section class="full-section-hero">
         <div class="intro-wrapper container-fluid">
-          <div class="hat-logo hat-logo-md">
+          <div class="hat-logo">
             <img src="images/my-icon-dark.svg" alt="logo" />
           </div>
 
-          <div class="name intro-text">
+          <div class="name-lg hero-text">
             <p>Hi. I'm Salvador.</p>
           </div>
-          <div class="tagline intro-text">
+          <div class="hero-tagline hero-text">
             <p class="occupation-txt">Software Developer</p>
             <p class="major-txt">CS Major</p>
           </div>
@@ -63,9 +63,41 @@
         <div class="ide-wrapper">
           <div class="ide-container">
             <div class="tabs">
-              <div id="file-name" class="file-wrapper">
+              <div
+                id="file-skills"
+                class="file-wrapper active tablinks"
+                onclick="displayTab(event, 'file-skills', 'scraper-desc')"
+                style="cursor: pointer"
+              >
                 <i class="fa fa-file file-icon"></i>
                 <p id="file-text">skills.txt</p>
+              </div>
+              <div
+                id="file1"
+                class="file-wrapper tablinks"
+                onclick="displayTab(event, 'file1', 'search-desc')"
+                style="cursor: pointer"
+              >
+                <i class="fa fa-file file-icon"></i>
+                <p id="file-text">search.py</p>
+              </div>
+              <div
+                id="file2"
+                class="file-wrapper tablinks"
+                onclick="displayTab(event, 'file2','wumpus-desc')"
+                style="cursor: pointer"
+              >
+                <i class="fa fa-file file-icon"></i>
+                <p id="file-text">wumpus_ai.java</p>
+              </div>
+              <div
+                id="file3"
+                class="file-wrapper tablinks"
+                onclick="displayTab(event, 'file3', 'mysite-desc')"
+                style="cursor: pointer"
+              >
+                <i class="fa fa-file file-icon"></i>
+                <p id="file-text">my_site.html</p>
               </div>
             </div>
             <div class="sidebar">
@@ -79,21 +111,21 @@
               </div>
 
               <div
-                class="skills-tab tablinks active"
+                class="skills-tab sidebar-links active"
                 onclick="displayBody(event, 'skills-content', 'skills.txt')"
                 style="cursor: pointer"
               >
                 <p><span>></span> SKILLS</p>
               </div>
               <div
-                class="projects-tab tablinks"
-                onclick="displayBody(event, 'projects-content', 'projects.txt')"
+                class="projects-tab sidebar-links"
+                onclick="displayBody(event, 'projects-content', 'scraper.py')"
                 style="cursor: pointer"
               >
                 <p><span>></span> PROJECTS</p>
               </div>
               <div
-                class="education-tab tablinks"
+                class="education-tab sidebar-links"
                 onclick="displayBody(event, 'education-content', 'education.txt')"
                 style="cursor: pointer"
               >
@@ -101,9 +133,68 @@
               </div>
             </div>
 
-            <div id="projects-content" class="ide-body tabcontent">
-              projects
+            <div
+              id="projects-content"
+              class="project-description ide-body body-text-wrapper tabcontent"
+            >
+              <div id="scraper-desc" class="description active">
+                <h4 class="body-lead-text">Price Scraper</h4>
+                <p>
+                  Wrote software that notifies me through email when a given
+                  camera drops below a desired price. It accomplishes this by
+                  scraping prices from several retail sites.
+                </p>
+                <ul>
+                  <li>Used BeautifulSoup to handle html parsing.</li>
+                  <li>
+                    Utilized Crontab to run the python script periodically.
+                  </li>
+                </ul>
+              </div>
+
+              <div id="search-desc" class="description">
+                <h4 class="body-lead-text">ICS Search Engine</h4>
+                <p>
+                  c​reated a search engine that allowed users to query the ICS
+                  subdomain (ics.uci.edu) and ranked the results based on their
+                  tf-idf score.
+                </p>
+                <ul>
+                  <li>HTML Parsing with the BeautifulSoup library.</li>
+                  <li>File Handling and User Input.</li>
+                  <li>Built user input GUI using Tkinter.</li>
+                </ul>
+              </div>
+
+              <div id="wumpus-desc" class="description">
+                <h4 class="body-lead-text">Wumpus World AI</h4>
+                <p>
+                  Implemented an AI that navigated an unknown text based world
+                  with the purpose of finding and retrieving gold while avoiding
+                  obstacles. The AI successfully achieved a 70% success rate on
+                  generated worlds.
+                </p>
+                <ul>
+                  <li>
+                    Implemented the AI search algorithm based on a depth-first
+                    search with a heuristic that valued staying alive more than
+                    finding gold.
+                  </li>
+                </ul>
+              </div>
+
+              <div id="mysite-desc" class="description">
+                <h4 class="body-lead-text">My Personal Site</h4>
+                <p>
+                  Designed and wrote my personal site using HTML CSS and
+                  javascript.
+                </p>
+                <ul>
+                  <li>Designed site using Adobe XD.</li>
+                </ul>
+              </div>
             </div>
+
             <div
               id="education-content"
               class="ide-body tabcontent projects-body"
@@ -131,9 +222,7 @@
             </div>
             <div id="skills-content" class="ide-body tabcontent active">
               <div class="body-text-wrapper language-wrapper">
-                <p class="body-lead-text">
-                  <<span>h1</span>> Languages <&#47;<span>h1</span>>
-                </p>
+                <p class="body-lead-text">Languages</p>
                 <ul class="icon-wrapper">
                   <li class="python">
                     <figure class="img-with-text">
@@ -171,9 +260,7 @@
                 </ul>
               </div>
               <div class="body-text-wrapper technologies-wrapper">
-                <p class="body-lead-text">
-                  <<span>h1</span>> Technologies <&#47;<span>h1</span>>
-                </p>
+                <p class="body-lead-text">Technologies</p>
                 <ul class="icon-wrapper">
                   <li class="git">
                     <figure class="img-with-text">
@@ -214,6 +301,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="scripts/tab-actions.js"></script>
+    <script src="scripts/tab_actions.js"></script>
+    <script src="scripts/sidebar_actions.js"></script>
   </body>
 </html>

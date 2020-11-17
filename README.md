@@ -2,7 +2,7 @@
 
 Showcases some of my projects and skills
 
-Page Under Construction
+Site is complete, but I may revisit to add some more details to skills area (level of experience with each language).
 
 ## TODO
 

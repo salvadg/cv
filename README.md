@@ -1,4 +1,5 @@
 # Personal Page
+https://salvadg.github.io/cv/
 
 Showcases some of my projects and skills
 
